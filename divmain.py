@@ -26,9 +26,9 @@ class MakePost(webapp2.RequestHandler):
         # Use the user input to create a new blog post
         all_posts = SaveProfile.query().fetch()
 
-        name_input = self.request.get('artist')
+        name_input = self.request.get('name')
         college_input = self.request.get('college')
-        poem_input = self.request.get('poem')
+        info_input = self.request.get('info')
         vote_num = self.request.get('vote_count')
 
 
@@ -36,7 +36,7 @@ class MakePost(webapp2.RequestHandler):
 
 
 
-        new_post = SaveProfile(name=name_input, college=college_input, interests=interests_input, vote_count=0)
+        new_post = SaveProfile(name=name_input, college=college_input, info=info_input, vote_count=0)
         new_post.put()
 
 
