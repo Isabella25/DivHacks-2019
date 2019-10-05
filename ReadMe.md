@@ -4,4 +4,4 @@ This program was created to ensure no student ever has to go through the college
 
 Key features include a Mentor page, Mentee page, and the ability to search by region, interests, college, and majors. Users can reach out to volunteer advisor through our Mentor page or create their own profile and wait to be contacted.
 
-Thought up by Isabella Graham (Columbia University 2023) and Ian Graham (Stuyvessant 2022)
+Thought up by Isabella Graham (Columbia University 2023) and Ian Graham (Stuyvesant 2022)
