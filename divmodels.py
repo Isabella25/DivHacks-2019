@@ -6,7 +6,6 @@ class SaveProfile(ndb.Model):
   college = ndb.StringProperty()
   info = ndb.TextProperty()
 
-  comments = ndb.TextProperty(repeated=True)
   code = ndb.StringProperty()
 
 

@@ -67,11 +67,7 @@ class ViewPost(webapp2.RequestHandler):
         post = ndb.Key(urlsafe = post_key_url).get()
         print post_key_url
 
-        comment_input = self.request.get('comment')
-
         # print "hi there"
-
-        post.comments.append(comment_input)
         post.put()
 
         # Render the template
