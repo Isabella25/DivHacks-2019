@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/animate.css-master/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Questrial|Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/Hover-master/css/hover.css">
+    <title> Blank Canvas | Home Page</title>
+  </head>
+  <body>
+    <div id="brandBackground">
+      <h1 id="brandName" > Blank Canvas</h1>
+    </div>
+
+    <div id="textsOnPage">
+      <h1 id="welcomeText" class="wow bounceInLeft questFont"> Welcome! </h1>
+      <span class="spacer"></span>
+      <div class="wow bounceInRight" data-wow-delay="1s" id="backOfBio">
+        <h2 id="bio">Blank Canvas provides an anonymous platform for artists <br> and independent thinkers to get honest feedback <br> from other artists.</h2>
+      </div>
+    </div>
+
+    <div id="buttonsDiv">
+
+      <a class="buttonLink" href="/MakePost">
+        <button class="homeButtons topButtons wow bounceInUp" data-wow-delay="2s" id="makeButton" type="button" name="button" onclick="NewPost">Make A Post</button>
+      </a>
+
+      <a class="buttonLink" href="/View">
+        <button class="homeButtons topButtons wow bounceInUp" data-wow-delay="2.03s" id="viewButton" type="button" name="button">View Posts</button>
+      </a>
+
+      <a class="buttonLink" href="/AboutUs">
+        <button class="homeButtons wow bounceInUp" id="aboutButton" data-wow-delay="2s" type="button" name="button">About Creators</button>
+      </a>
+
+    </div>
+
+
+  </body>
+
+  <script src="../static/js/WOW-master/dist/wow.js"></script>
+  <script>
+  new WOW().init();
+  </script>
+
+</html>

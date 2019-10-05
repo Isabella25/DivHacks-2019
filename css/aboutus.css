@@ -1,0 +1,103 @@
+body{
+  background-image: url("http://chromethemer.com/wallpapers/chromebook-wallpapers/download/space-hole-3840x2160.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Raleway', sans-serif;
+
+}
+.questFont{
+  font-family: 'Questrial', sans-serif;
+
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+li {
+  /* float: left; */
+}
+.logo{
+  float: left;
+}
+#viewPost{
+  margin-right: 170px;
+  margin-left: 50px;
+}
+.right{
+  float: right;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.right:hover {
+  background-color: darkred;
+}
+#itemHolder{
+  /* display: flex; */
+  /* justify-content: space-evenly; */
+}
+#welcomeText{
+  color: gold;
+  text-shadow: 1px 1px shadow;
+  text-align: center;
+}
+
+.realImages{
+  height: 550px;
+}
+
+.photos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+.cards{
+  font-size: 20px;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/000/109/819/non_2x/beautiful-gold-sparkle-background-vector.jpg");
+}
+.backOfName{
+  color: white;
+  text-align: center;
+  margin-left: 115px;
+  background: rgba(0, 0, 0, 0.5);
+  width: 50%;
+  text-shadow: 1px 1px black;
+
+}
+#isaHat{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#isabellaCard{
+  margin-left: 0px;
+}
+#elvisCard{
+  margin-left: 40px;
+}
+#tyCard{
+  margin-left: 0px;
+}
+#allPhotos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hatsParent{
+  display: flex;
+  justify-content: space-evenly;
+}
+.hats{
+  width: 80px;
+  height: 80px;
+  margin-top: 40px;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="../static/css/viewPost.css">
+    <link href="https://fonts.googleapis.com/css?family=Questrial|Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/Hover-master/css/hover.css">
+
+  </head>
+  <body>
+
+
+    <ul id="itemHolder">
+      <li><a class="active logo questFont" href="/">Blank Canvas</a></li>
+      <li><a href="/MakePost" id="makePost"class="right hvr-pulse questFont">Make a post</a></li>
+      <li><a href="/AboutUs"  class="right hvr-pulse questFont">About Us</a></li>
+    </ul>
+
+
+
+
+
+
+    {% for new_post in all_posts %}
+    <div id="parentContent">
+      <div id="contents">
+
+          <div id="top">
+            <h1 id="title" class="questFont">{{new_post.title}}</h1>
+            <p id="voteCount"> &#9825; {{new_post.vote_count}}</p>
+          </div>
+          <div id="actualText">
+            <h4 id="artistName">By: {{new_post.artist}}</h4>
+            <p id="poem">{{new_post.poem}}</p>
+
+        </div>
+
+
+        <div id="commentDiv">
+          <h3 id ="comment" class="questFont">Feedback: </h3>
+          {% for comment in new_post.comments %}
+          <p id="eachComment"> {{comment}} </p>
+          <hr align="left">
+          {% endfor %}
+        </div>
+
+
+<!-- <div>
+</div> -->
+            <form method="post" action="/View">
+
+              <label>
+                  <h3>Give some feedback:</h3>
+                  <input type="hidden" name="postKey" value="{{ new_post.key.urlsafe()  }}" />
+                  <textarea name="comment" rows="2" cols="127"></textarea>
+              </label>
+
+              <br>
+              <!-- The comment button : -->
+              <br>
+              <br>
+              <button id="commentButton" class="button" type="submit"> Post your comment </button>
+            </form>
+            <form method="post" action="/DeletePost">
+              <label>
+                  <input type = "hidden" name="postKey" value="{{new_post.key.urlsafe()}}"></input>
+              </label>
+              <br>
+
+                    <!-- The deletion button : -->
+              <button class="button" id="deleteButton" name="delete" type="submit"> Delete Post </button>
+            </form>
+
+            <form method="post" action= "/UpVote">
+              <!-- The deletion button : -->
+              <button class="button"  type="submit" name="upvote" value="upvote_value" id="upvote">Like this post &nbsp; &#9825;</button>
+              <input id="nameBox" type="hidden" name="hidden" value="{{new_post.key.urlsafe()}}">
+            </form>
+
+      </div>
+    </div>
+    {% endfor%}
+
+<script src="../static/js/main.js"></script>
+
+  </body>
+
+</html>

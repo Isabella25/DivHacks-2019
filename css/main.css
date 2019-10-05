@@ -1,0 +1,76 @@
+body{
+  background-image: url(../images/kh.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-shadow: 2px 2px black;
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif;
+}
+.questFont{
+  font-family: 'Questrial', sans-serif;
+
+}
+#brandName{
+  font-size: 60px;
+
+}
+
+#brandBackground{
+  background: rgba(0, 0, 0, 0.5)
+}
+
+#textsOnPage{
+  display: flex;
+  margin-bottom: 200px;
+  margin-top: 150px;
+
+}
+#backOfBio{
+  background: rgba(0, 0, 0, 0.5);
+  margin-right: 150px;
+}
+.spacer{
+  flex-grow: 1;
+}
+#bio{
+  text-align: center;
+  font-size: 27px;
+  padding: 20px;
+}
+#welcomeText{
+  text-align: center;
+  font-size: 60px;
+  margin-left: 200px;
+}
+
+.buttonLink{
+  text-decoration: none;
+}
+#buttonsDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* text-decoration: none; */
+}
+.homeButtons{
+  padding: 30px 40px;
+  border: 6px solid black;
+  margin: 30px;
+  /* background-image: url(../images/buttonred.jpg); */
+  background-image: url(https://flipwallpapers.com/wallpapers/red-wallpaper-full-hd-On-Tumblr-Wallpaper.jpg);
+  border-radius: 50px;
+  background-size: cover;
+  color: white;
+  font-size: 30px;
+  opacity: 0.96;
+}
+
+.topButtons{
+  display: inline;
+}
+
+#aboutButton{
+  display: block;
+
+}
